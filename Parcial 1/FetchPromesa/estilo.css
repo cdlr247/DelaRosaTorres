@@ -1,0 +1,24 @@
+div{
+    width: 850px;
+    height: 250px;
+    font-style: normal;
+    font-size: medium;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: rgb(41, 154, 230);
+}
+
+#frase,#anime,#personaje{
+    font-style: italic;
+    color: white;
+}
+
+#unboton{
+    border-radius: 5px;
+    background-color: rgb(12, 76, 173);
+    border-color: rgb(12, 76, 173);
+    color: white;
+}

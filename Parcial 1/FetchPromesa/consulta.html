@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConsultaAPI</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="fetch.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="content">
+        <button id="unboton">Frase del dia!</button>
+        <h3 id="anime"></h3>
+        <h3 id="personaje"></h3>
+        <h3 id="frase"></h3>
+    </div>
+    
+    <!--<script>
+        document.getElementById('unboton').addEventListener('click',function() {
+            hacerPeticion();
+        });
+
+        /*fetch("https://api.waifu.pics/sfw/kick")
+            .then(respuesta => respuesta.json())
+            .then(datos => console.log(datos));*/
+
+        function hacerPeticion(){
+            fetch("https://animechan.vercel.app/api/random")
+            .then(respuesta => respuesta.json())
+            .then(datos => {datosFrase(datos);}); 
+        }
+
+        function datosFrase(obj){
+            document.getElementById('anime').textContent='Anime: ' + obj.anime
+            document.getElementById('personaje').textContent='Personaje: ' + obj.character
+            document.getElementById('frase').textContent='Frase: ' + obj.quote
+        }
+    </script>-->
+</body>
+</html>
