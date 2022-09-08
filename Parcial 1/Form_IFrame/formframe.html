@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+    <form target="broma" method="GET" action="http://api.icndb.com/jokes/random/">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" type="text"><br>
+        <label for="apellido">Apellido</label>
+        <input id="apellido" type="text"><br>
+        <button id="btnConsulta">Fetch</button>
+        <!--<textarea name="broma" id="broma" cols="30" rows="10"></textarea>-->
+    </form>
+    <iframe name="broma"></iframe>
+
+<!--<script>
+        document.getElementById("btnConsulta").addEventListener("click",async function(){
+            let broma = await traerBroma();
+            console.log(broma);
+
+            document.getElementById("broma").value=broma.value.joke;
+        });
+
+        async function traerBroma() {
+            let vNom=document.getElementById("nombre").value;
+            let vApp=document.getElementById("apellido").value;
+            let vPet="http://api.icndb.com/jokes/random?firstName="+vNom+"&lastName="+vApp
+            let headersList = {
+                "Accept": "*/*",
+                "User-Agent": "Thunder Client (https://www.thunderclient.com)"
+            }
+
+            let response = await fetch(vPet, {
+                method: "GET",
+                headers: headersList
+            });
+
+            let data = await response.json();
+            return data
+        }
+    </script>-->
+</body>
+</html>
