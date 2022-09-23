@@ -1,0 +1,7 @@
+{"basededatos":
+    {
+        "1":{"Nombre": "Claudio", "Apellido": "de la Rosa", "Telefono": "123456789"},
+        "2":{"Nombre": "Jose", "Apellido": "Torres", "Telefono": "987654321"},
+        "3":{"Nombre": "Nose", "Apellido": "Ruiz", "Telefono": "1234345667"}
+    }
+}
