@@ -1,4 +1,3 @@
-//header('Access-Control-Allow-Origin: *');
 const express = require('express');
 const cors = require('cors')
 
@@ -9,12 +8,12 @@ app.use(express.json())
 app.use(cors({origin: "http://localhost"}))
 
 app.get('/', (req, res) => {
-    //res.send('Servidor Express contestando a get desde el pto 8081')
+    //res.send('Servidor Express contestando a get desde el pto 3308')
     res.sendFile('./static/Index.html',{root:__dirname},(err)=>{console.log('Archivo enviado')})
 })
 
 app.post('/', (req, res) => {
-  //  res.send('Servidor Express contestando a post desde el pto 8081')
+  //  res.send('Servidor Express contestando a post desde el pto 3308')
 //(descomentar esta linea) 
 res.json({usuario:'Claudio'})
 })
@@ -58,5 +57,3 @@ app.listen(3308,() => {
     console.log(__dirname)
     console.log(__filename)
 })
-
-//npm i cors //la misma carpeta 
