@@ -1,9 +1,13 @@
+const cors = require('cors')
 const express = require('express')
 const mysql = require('mysql')
 const app = express()
 const {json}=require('express')
 
+app.use(cors({origin: "*"}))
 app.use(express.json())
+app.use(express.text())
+
 
 var con = mysql.createConnection({
     host:'localhost',
@@ -14,7 +18,7 @@ var con = mysql.createConnection({
 
 con.connect();
 
-app.get('/todoslosalumnos',async(req,res) =>{
+app.get('/todoslosalumnos',(req,res) =>{
     //con.connect();
 
     con.query('SELECT* FROM alumno', function(error,results){
