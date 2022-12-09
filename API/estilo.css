@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #272727;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navMenu {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.navMenu a {
+  color: #f6f4e6;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  width: 80px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:hover {
+  color: #fddb3a;
+}
+
+.navMenu .dot {
+  width: 6px;
+  height: 6px;
+  background: #fddb3a;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:nth-child(1):hover ~ .dot {
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover ~ .dot {
+  -webkit-transform: translateX(110px);
+  transform: translateX(110px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover ~ .dot {
+  -webkit-transform: translateX(200px);
+  transform: translateX(200px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(4):hover ~ .dot {
+  -webkit-transform: translateX(285px);
+  transform: translateX(285px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+  .contenidoOpcion { 
+    display: none;
+    text-align: center;
+    padding-top: 15%;
+    color: #f6f4e6;
+  }
+
+  #opcion1:target,
+  #opcion2:target,
+  #opcion3:target,
+  #opcion4:target { 
+    display: block;
+  }
+
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.button5 {
+    background-color: rgb(63, 45, 45);
+    color: white;
+}
+
+.button5:hover {
+    background-color: #7c3636;
+    color: white;
+}
+
+zing-grid[loading] {
+  height: 2573px;
+}
+
+zing-grid {
+  background: #9c4444;
+  padding: 10px;
+  box-shadow: 0 0 9px rgba(0, 0, 0, .15);
+}
+
+zg-caption {
+  background-color: rgb(173, 53, 23);
+  color: white;
+  font-weight: bold;
+  opacity: 0.6;
+  text-align: center;
+  transition: 0.3s opacity;
+  font-size: 2rem;
+}
+ 
+zg-caption:hover {
+  opacity: 1;
+}
+ 
+zg-head {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  justify-content: center;
+  background: #EF5250;
+}
+ 
+zg-cell {
+  color: rgb(255, 255, 255);
+  transition: 1s background-color;
+}
+ 
+zg-cell:hover {
+  background-color: rgb(192, 41, 41);
+}
+ 
+zg-body zg-row:nth-child(odd) {
+  background-color: rgb(82, 36, 26);
+}
+ 
+zg-pager {
+  background: #bdbdbd;
+  justify-content: center;
+}
+
+zg-dialog::part(header) {
+  background-color: red;
+}

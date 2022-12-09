@@ -1,0 +1,23 @@
+[
+    {
+      "añolanzamiento": "2022",
+      "director": "Sam Raimi",
+      "duracion": "126 min",
+      "genero": "Accion/Aventura",
+      "nombre": "Doctor Strange en el Multiverso de la Locura"
+    },
+    {
+      "añolanzamiento": "2021",
+      "director": "Jon Watts",
+      "duracion": "148 min",
+      "genero": "Accion/Aventura",
+      "nombre": "Spider-Man: Sin Camino a Casa"
+    },
+    {
+      "añolanzamiento": "2022",
+      "director": "Ryan Coogler",
+      "duracion": "2h 41m",
+      "genero": "Accion/Aventura",
+      "nombre": "Black Panther: Wakanda Forever"
+    }
+  ]
