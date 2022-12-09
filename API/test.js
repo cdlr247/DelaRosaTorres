@@ -48,7 +48,7 @@ describe('CRUD Peliculas ',()=>{
 
     it('modificar peli', function(done) {
         chai.request(url)
-      .put('/pelicula/16')
+      .put('/pelicula/1')
       .send({titulo: "Doctor Strange en el Multiverso de la Locura",
       lanzamiento: "2022",
       duracion: "2h 6m",
@@ -63,7 +63,7 @@ describe('CRUD Peliculas ',()=>{
 
     it('eliminar peli', function() {
         chai.request(url)
-      .delete('/pelicula/16')
+      .delete('/pelicula/18')
       .end(function(err, res) {
             expect(res).to.have.status(200);
         });
